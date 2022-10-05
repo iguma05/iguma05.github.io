@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    font-family: 'TT Lakes';
+    max-width: 1120px;
+}
+button {
+    border: none;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.page-header {
+    min-height: 80px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 15px;
+}
+
+
+
+.page-header__contacts {
+    display: none;
+}
+.page-header__check-status {
+    display: flex;
+    width: 120px;
+    justify-content: space-around;
+}
+/* .check-status i {
+    display: none;
+} */
+.btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #FF3E79;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.btn:hover, .btn:focus {
+    opacity: 0.7;
+}
+.page-header__logo {
+    display: flex;
+    height: 50px;
+    width: 90px;
+}
+.page-header__logo img {
+    justify-content: space-between;;
+}
+.page-header__check-status::before {
+    content: '';
+    border-right: 2px solid #EAEAEA;
+    align-self: center;
+    height: 30px;
+}
+
+
+.content {
+    background-color: #F8F8F8;
+}
+.content__title {
+    display: flex;
+    width: 100%;
+    
+}
+.content__title::before {
+    content:'';
+    border-left: 4px solid #41F6D7;
+    
+    width: 10px;
+    height: 40px;
+    align-self: center;
+}
+.content__check-status {
+    display: none;
+}
+.slide-menu {
+    display: flex;    
+    flex-wrap: nowrap;
+    
+    overflow-x: auto;
+    margin:0 15px;    
+}
+
+.content__item {
+    padding: 8px 15px;
+     
+    white-space: nowrap;
+    
+    color: #7E7E82;
+    align-items: center;
+    
+    
+}
+.slide-menu div:first-child {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+.content__text {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 15px;
+    letter-spacing: 0.2px;
+    width: 90%;
+    
+    
+}
+.content__text div {
+    overflow: hidden;    
+    height: 90px;
+    margin-bottom: 15px;
+}
+
+.content__more {
+    margin: 10px 15px;
+    text-decoration: none;
+    color: #1B1C21;
+    font-size: 16px;
+    line-height: 24px; 
+    font-weight: 500;  
+}
+.content__more span {
+    color: #41F6D7;
+    vertical-align: middle;
+}
+.content__photo {
+    width: 100%;
+}
+.content__photo img {
+
+    height: 210px;
+}
+
+
+@media (min-width: 768px) {
+    header {
+        /* padding: 0 24px; */
+    }
+    .page-header {
+        min-height: 80px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+   
+
+    .page-header__contacts {
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+        
+    }
+    .page-header__logo {
+        
+        height: 50px;
+        width: 140px;
+        margin-right: 175px;
+    }
+    .page-header__logo::before {
+        content: '';
+        border-right: 2px solid #EAEAEA;
+        align-self: center;
+        height: 30px;
+        margin-right: 20px;
+
+    }
+  
+        .page-header__btn {
+        margin: 8px;
+        
+    }
+   
+    .content__text {
+        
+        max-width: 41%;
+        font-size: 14px;
+        line-height: 20px;
+        max-height: 20%;
+    }
+    .content__text div {
+        height: 150px;   
+        
+    }
+    .content__photo {
+        
+        max-width: 50%;
+        padding: 25px 0;
+        
+    }
+    .content__photo img {
+        border-radius: 5px;
+        
+    }
+}
+
+@media (min-width: 1120px) {
+    body {
+        background-color: #F8F8F8;
+    }
+    .page-header {
+        display: none;
+    }
+    
+    
+    .content {
+    }
+    .content__title {
+        display: flex;
+        width: 100%;
+        
+    } 
+    .content__title h1 {
+        width: 55%;
+    }
+    .content__check-status {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+    .check-status::before {
+        display: none;
+    }
+    .check-status {       
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .check-status i {
+        display: flex;
+        
+        align-items: center;
+        font-style: normal;
+        font-weight: 500;
+        padding-right: 8px;
+    }
+    .slide-menu {
+        overflow: visible;
+    }
+    .slide-menu {
+        flex-wrap: wrap;
+    }
+    .content__item {
+    }
+    
+    .content__text {
+        width: 490px;
+        height: 160px;
+    }
+    .content__more {
+    }
+    .content__photo {
+        width: 531px;
+        height: 383px;
+    }
+    .content__photo img {
+        width: 531px;
+        height: 307px
+    }
+} 
