@@ -2,9 +2,11 @@ body {
     margin: 0;
     font-family: 'TT Lakes';
     max-width: 1120px;
+    min-width: 320px;
 }
 button {
     border: none;
+    cursor: pointer;
 }
 .container {
     display: flex;
@@ -19,8 +21,6 @@ button {
     margin: 0 15px;
 }
 
-
-
 .page-header__contacts {
     display: none;
 }
@@ -29,9 +29,7 @@ button {
     width: 120px;
     justify-content: space-around;
 }
-/* .check-status i {
-    display: none;
-} */
+
 .btn {
     height: 40px;
     width: 40px;
@@ -81,29 +79,37 @@ button {
 .content__check-status {
     display: none;
 }
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
 .slide-menu {
-    display: flex;    
-    flex-wrap: nowrap;
-    
     overflow-x: auto;
+}
+.slide-menu ul {
+    display: flex;    
+    flex-wrap: nowrap;    
     margin:0 15px;    
 }
 
-.content__item {
-    padding: 8px 15px;
-     
-    white-space: nowrap;
-    
-    color: #7E7E82;
-    align-items: center;
-    
-    
-}
-
-.slide-menu div:first-child {
+.slide-menu button:hover, .slide-menu button:focus {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
 }
+
+.content__item {
+    padding: 8px 15px;    
+    white-space: nowrap;    
+    color: #7E7E82;
+    align-items: center;     
+}
+/* .slide-menu li:first-child {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+} */
 .content__text {
     font-size: 14px;
     line-height: 18px;
@@ -113,7 +119,7 @@ button {
     
     
 }
-.content__text div {
+.text {
     overflow: hidden;    
     height: 90px;
     margin-bottom: 15px;
@@ -174,7 +180,7 @@ button {
 
     }
   
-        .page-header__btn {
+    .page-header__btn {
         margin: 8px;
         
     }
@@ -242,11 +248,11 @@ button {
         font-weight: 500;
         padding-right: 8px;
     }
-    .slide-menu {
-        overflow: visible;
+    .slide-menu {        
     }
-    .slide-menu {
+    .slide-menu ul {
         flex-wrap: wrap;
+        overflow: visible;
     }
     .content__item {
     }
@@ -262,7 +268,11 @@ button {
         height: 383px;
     }
     .content__photo img {
-        width: 531px;
         height: 307px
     }
 } 
+
+.open {
+    overflow: visible;
+    height: auto;
+}
