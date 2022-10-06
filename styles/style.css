@@ -192,9 +192,9 @@ li {
         line-height: 20px;
         max-height: 20%;
     }
-    .content__text div {
-        height: 150px;   
-        
+    .text {
+        height: 150px; 
+        margin-bottom: 15px;          
     }
     .content__photo {
         
