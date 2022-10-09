@@ -18,7 +18,6 @@ button {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    margin: 0 15px;
 }
 
 .page-header__contacts {
@@ -50,7 +49,8 @@ button {
     width: 90px;
 }
 .page-header__logo img {
-    justify-content: space-between;;
+    justify-content: space-between;
+    width: 90px;
 }
 .page-header__check-status::before {
     content: '';
@@ -141,7 +141,7 @@ li {
     width: 100%;
 }
 .content__photo img {
-
+    width: 312px;
     height: 210px;
 }
 
@@ -203,6 +203,8 @@ li {
         
     }
     .content__photo img {
+        width: 384px;
+        height: 215px;
         border-radius: 5px;
         
     }
@@ -268,7 +270,8 @@ li {
         height: 383px;
     }
     .content__photo img {
-        height: 307px
+        height: 307px;
+        width: 531px;
     }
 } 
 
