@@ -11,62 +11,64 @@
     <title>Menu</title>
 </head>
 <body>
-    
-    <header>
-        <div class="header__title container">
-            <button class="btn">
-                <img src="img/close.svg" alt="">
-            </button>
-            <div class="header__logo">
-                <img src="img/LOGO.png" alt="">
+    <div class="mobile-menu">
+        <header>
+            <div class="header__title container">
+                <button class="btn">
+                    <div class="btn__close"></div>
+                </button>
+                <div class="header__logo">
+                    <div class="logo__img"></div>
+                </div>
+                <button class="btn">
+                    <div class="btn__search"></div>
+                </button>
             </div>
-            <button class="btn">
-                <img src="img/search.svg" alt="">
-            </button>
-        </div>
-    </header>
-    
-    <nav class="menu">
-        <ul class="menu__item">
-            <li>Ремонт техники</li>
-            <li>Услуги и сервисы</li>
-            <li>Корпоративным клиентам</li>
-            <li>Продавцам техники</li>
-            <li>Партнерам</li>
-            <li>Производителям</li>
-            <li>Наши сервисные центры</li>
-            <li>Контакты</li>
-        </ul>
-    </nav>
-
-    <footer class="footer container">
-        <div class="footer__menu">
-            <button class="btn">
-                <img src="img/phone.svg" alt="">
-            </button>
-            <button class="btn">
-                <img src="img/chat.svg" alt="">
-            </button>
-            <button class="btn">
-                <img src="img/profile.svg" alt="">
-            </button>
-        </div>
-
-        <div class="footer__mail">
-            <span>mail@cps.com</span>            
-        </div>
-
-        <div class="phone-number"><h2>8 800 890 8900</h2></div>
+        </header>
         
-        <div class="footer__language">
-            <span>RU</span>
-            <span>EN</span>
-            <span>CN</span>
-        </div>       
-        
-    </footer>
+        <nav class="menu">
+            <ul>
+                <li class="menu__item">Ремонт техники</li>
+                <li class="menu__item">Услуги и сервисы</li>
+                <li class="menu__item">Корпоративным клиентам</li>
+                <li class="menu__item">Продавцам техники</li>
+                <li class="menu__item">Партнерам</li>
+                <li class="menu__item">Производителям</li>
+                <li class="menu__item">Наши сервисные центры</li>
+                <li class="menu__item">Контакты</li>
+            </ul>
+        </nav>
     
-   
+        <footer class="footer container">
+            <div class="footer__menu">
+                <button class="btn">
+                    <div class="btn__phone"></div>
+                </button>
+                <button class="btn">
+                    <div class="btn__chat"></div>
+                </button>
+                <button class="btn">
+                    <div class="btn__profile"></div>
+                </button>
+            </div>
+    
+            <div class="footer__mail">
+                <a href="mailto: mail@cps.com">mail@cps.com</a>            
+            </div>
+    
+            <div class="phone-number">
+                <h2><a href="tel: 88008908900">8 800 890 8900</a></h2>
+            </div>        
+            
+            <ul class="footer__language"></ulclass>
+                <li class="language">RU</li>
+                <li class="language">EN</li>
+                <li class="language">CN</li>
+            </ul>
+                   
+            
+        </footer>
+    </div>   
     
 </body>
 </html>
