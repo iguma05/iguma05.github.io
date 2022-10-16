@@ -1,18 +1,15 @@
 const more = document.querySelector('.content__more');
+const pseudo = document.querySelector('.content__more::before');
 const text = document.querySelector('.text');
 
 more.addEventListener('click', ()=> {
     text.classList.toggle('open');
     if(text.classList != 'text') {
         more.innerHTML="";
-        more.innerHTML+=`<span class="material-symbols-outlined">
-        keyboard_double_arrow_up
-        </span>Свернуть`;
+        more.innerHTML+="Свернуть";
     } else {
         more.innerHTML="";
-        more.innerHTML+=`<span class="material-symbols-outlined">
-        keyboard_double_arrow_down
-        </span>Читать далее`;
+        more.innerHTML+="Читать далее";
     }
 });
 
@@ -32,14 +29,10 @@ seeBrandsAll.addEventListener('click', ()=> {
     brands.classList.toggle('open'); 
     if ( brands.classList != 'brands__items') {            
         seeBrandsAll.innerHTML="";
-        seeBrandsAll.innerHTML+=`<span class="material-symbols-outlined">
-        keyboard_double_arrow_up
-        </span>Скрыть`;
+        seeBrandsAll.innerHTML+="Скрыть";
     } else {
         seeBrandsAll.innerHTML="";
-        seeBrandsAll.innerHTML+=`<span class="material-symbols-outlined">
-        keyboard_double_arrow_down
-        </span>Показать все`;
+        seeBrandsAll.innerHTML+="Показать все";
     }
     
 });

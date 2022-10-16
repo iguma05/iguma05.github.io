@@ -13,29 +13,30 @@
 <body>
     <header>
         <div class="page-header container">
-            <button class="btn menu">
-                <img src="/img/icon.svg" alt="Menu">
+            <button class="btn">
+                <div class="btn_menu"></div>
             </button>
             <div class="page-header__logo">
-                <img src="/img/Logo.svg" alt="">
+                <a href="#" class="logo"></a>
             </div>
             <div class="page-header__contacts">
-                <button class="btn call">
-                    <img src="img/phone.svg" alt="">
+                <button class="btn">
+                    <div class="btn_call"></div>
                 </button>
                 <button class="btn">
-                    <img src="img/chat.svg" alt="">
+                    <div class="btn_chat"></div>
                 </button>
                 <button class="btn">
-                    <img src="img/profile.svg" alt="">
+                    <div class="btn_profile"></div>
+                </button>
             </div>
             
             <div class="page-header__check-status">
                 <button class="btn">
-                    <img src="img/Group.svg" alt="">
+                    <div class="btn_group"></div>
                 </button>
                 <button class="btn">
-                    <img src="img/check.svg" alt="">
+                    <div class="btn_check"></div>
                 </button>
             </div>
             
@@ -44,23 +45,23 @@
     </header>
     <main>
         <div class="content container">
-            <div class="content__title">
+            <header class="content__title">
                 <h1>Услуги и сервисы</h1>
                 <div class="content__check-status">
                     <div class="check-status">
                         <i>Оставить заявку</i>
                         <button class="btn">
-                            <img src="/img/Group.svg" alt="">
+                            <div class="btn_group"></div>
                         </button>
                     </div>
                     <div class="check-status">
                         <i>Статус ремонта</i>
                         <button class="btn">
-                            <img src="img/check.svg" alt="">
+                            <div class="btn_check"></div>
                         </button>
                     </div>
                 </div>
-            </div>
+            </header>
             <nav class="slide-menu">
                 <ul>
                     <li> <button class="content__item">Ремонтируемые бренды</button></li>
@@ -73,28 +74,27 @@
                 </ul>
                 
             </nav>
+            <article class="container">
             <div class="content__text">
                 <div class="text">
                     <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
                     <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
                 </div>
 
-                <div class="content__more"><span class="material-symbols-outlined">
-                keyboard_double_arrow_down
-                </span>Читать далее</div>
+                <button class="content__more">Читать далее</button>
             </div>
             
             <div class="content__photo">
                 <img src="/img/IMG_3223.jpg" alt="">
             </div>         
-
+            </article>
         </div>
 
 
-        <div class="brands">
-            <div class="brands__title">
-                <h7>Ремонт техники различных брендов</h7>
-            </div>
+        <section class="brands">
+            <h2 class="brands__title">
+                Ремонт техники различных брендов
+            </h2>
             <!-- Slider main container -->
             <div class="swiper">
                 <!-- Additional required wrapper -->
@@ -103,49 +103,37 @@
                 <div class="swiper-slide">
                     <div class="brands__item">
                         <img src="img/brands/Lenovo.png" alt="">
-                        <button class="btn btn_brand">
-                            <img src="img/dropdown.svg" alt="">
-                        </button>
+                        <button class="btn btn_brand"></button>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="brands__item">
                         <img src="img/brands/Samsung.png" alt="">
-                        <button class="btn btn_brand">
-                            <img src="img/dropdown.svg" alt="">
-                        </button>
+                        <button class="btn btn_brand"></button>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="brands__item">
                         <img src="img/brands/Apple.png" alt="">
-                        <button class="btn btn_brand">
-                            <img src="img/dropdown.svg" alt="">
-                        </button>
+                        <button class="btn btn_brand"></button>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="brands__item">
                         <img src="img/brands/Bosch.png" alt="">
-                        <button class="btn btn_brand">
-                            <img src="img/dropdown.svg" alt="">
-                        </button>
+                        <button class="btn btn_brand"></button>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="brands__item">
                         <img src="img/brands/Hp.png" alt="">
-                        <button class="btn btn_brand">
-                            <img src="img/dropdown.svg" alt="">
-                        </button>
+                        <button class="btn btn_brand"></button>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="brands__item">
                         <img src="img/brands/Acer.png" alt="">
-                        <button class="btn btn_brand">
-                            <img src="img/dropdown.svg" alt="">
-                        </button>
+                        <button class="btn btn_brand"></button>
                     </div>
                 </div>
                 
@@ -155,74 +143,52 @@
                 <div class="swiper-pagination"></div>
 
             </div>
-            <div class="brands__items">
+            <ul class="brands__items">
                 
-                <div class="brands__item">
+                <li class="brands__item">
                     <img src="img/brands/Lenovo.png" alt="">
-                    <button class="btn btn_brand">
-                        <img src="img/dropdown.svg" alt="">
-                    </button>
-                </div>
-                <div class="brands__item">
+                    <button class="btn btn_brand"></button>
+                </li>
+                <li class="brands__item">
                     <img src="img/brands/Samsung.png" alt="">
-                    <button class="btn btn_brand">
-                        <img src="img/dropdown.svg" alt="">
-                    </button>
-                </div>
-                <div class="brands__item">
+                    <button class="btn btn_brand"></button>
+                </li>
+                <li class="brands__item">
                     <img src="img/brands/Apple.png" alt="">
-                    <button class="btn btn_brand">
-                        <img src="img/dropdown.svg" alt="">
-                    </button>
-                </div>
-                <div class="brands__item">
+                    <button class="btn btn_brand"></button>
+                </li>
+                <li class="brands__item">
                     <img src="img/brands/Bosch.png" alt="">
-                    <button class="btn btn_brand">
-                        <img src="img/dropdown.svg" alt="">
-                    </button>
-                </div>
-                <div class="brands__item">
+                    <button class="btn btn_brand"></button>
+                </li>
+                <li class="brands__item">
                     <img src="img/brands/Hp.png" alt="">
-                    <button class="btn btn_brand">
-                        <img src="img/dropdown.svg" alt="">
-                    </button>
-                </div>
-                <div class="brands__item">
+                    <button class="btn btn_brand"></button>
+                </li>
+                <li class="brands__item">
                     <img src="img/brands/Sony.png" alt="">
-                    <button class="btn btn_brand">
-                        <img src="img/dropdown.svg" alt="">
-                    </button>
-                </div>
-                <div class="brands__item">
+                    <button class="btn btn_brand"></button>
+                </li>
+                <li class="brands__item">
                     <img src="img/brands/ViewSonic.png" alt="">
-                    <button class="btn btn_brand">
-                        <img src="img/dropdown.svg" alt="">
-                    </button>
-                </div>
-                <div class="brands__item">
+                    <button class="btn btn_brand"></button>
+                </li>
+                <li class="brands__item">
                     <img src="img/brands/Lenovo.png" alt="">
-                    <button class="btn btn_brand">
-                        <img src="img/dropdown.svg" alt="">
-                    </button>
-                </div>
-                <div class="brands__item">
+                    <button class="btn btn_brand"></button>
+                </li>
+                <li class="brands__item">
                     <img src="img/brands/Bosch.png" alt="">
-                    <button class="btn btn_brand">
-                        <img src="img/dropdown.svg" alt="">
-                    </button>
-                </div>
-                <div class="brands__item">
+                    <button class="btn btn_brand"></button>
+                </li>
+                <li class="brands__item">
                     <img src="img/brands/Acer.png" alt="">
-                    <button class="btn btn_brand">
-                        <img src="img/dropdown.svg" alt="">
-                    </button>
-                </div>                
-            </div>
-            <div class="content__more brands__more"><span class="material-symbols-outlined">
-                keyboard_double_arrow_down
-                </span>Показать все</div>
+                    <button class="btn btn_brand"></button>
+                </li>                
+            </ul>
+            <button class="content__more brands__more">Показать все</button>
             
-        </div>
+        </section>
         
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
