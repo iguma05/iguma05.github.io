@@ -172,7 +172,8 @@ li {
     margin-right: 16px;
     align-self: center;
 }
-.content__more:hover {
+.content__more:active::before {
+    transform: rotate(180deg);
 }
 
 .content__photo {
@@ -394,6 +395,6 @@ li {
     height: auto;
 }
 
-.change {
+.rotate::before {
     transform: rotate(180deg);
 }

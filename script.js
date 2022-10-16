@@ -1,10 +1,11 @@
 const more = document.querySelector('.content__more');
-const pseudo = document.querySelector('.content__more::before');
+// const pseudo = window.getComputedStyle(document.querySelector('.content__more'), ':before');
 const text = document.querySelector('.text');
 
 more.addEventListener('click', ()=> {
     text.classList.toggle('open');
-    if(text.classList != 'text') {
+    more.classList.toggle('rotate');
+    if(text.classList != 'text') {        
         more.innerHTML="";
         more.innerHTML+="Свернуть";
     } else {
@@ -27,6 +28,7 @@ const seeBrandsAll = document.querySelector('.brands__more');
 
 seeBrandsAll.addEventListener('click', ()=> {
     brands.classList.toggle('open'); 
+    seeBrandsAll.classList.toggle('rotate');
     if ( brands.classList != 'brands__items') {            
         seeBrandsAll.innerHTML="";
         seeBrandsAll.innerHTML+="Скрыть";
