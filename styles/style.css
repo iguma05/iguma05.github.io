@@ -128,11 +128,11 @@ li {
     display: flex;    
     flex-wrap: nowrap;    
     margin:0 15px;
-    height: 40px;
+    align-items: center;
 }
 
-.slide-menu button:hover, .slide-menu button:focus {     
-    border: 2px solid #B8FFEC;
+.content__item:hover, .content__item:focus {     
+    box-shadow: inset 2px 2px 0 0 #B8FFEC, inset -2px -2px 0 0 #B8FFEC;
 }
 
 .content__item {
@@ -373,7 +373,6 @@ li {
     .slide-menu ul {
         flex-wrap: wrap;
         overflow: visible;
-        height: 80px;
     }
     .content__item {
     }
