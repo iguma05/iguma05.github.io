@@ -14,42 +14,34 @@
     <div class="mobile-menu">
         <header>
             <div class="header__title container">
-                <button class="btn">
-                    <div class="btn__close"></div>
-                </button>
+                <button class="btn btn_close"></button>
                 <div class="header__logo">
-                    <div class="logo__img"></div>
+                    <img src="/img/Logo.svg" alt="Logo">
                 </div>
-                <button class="btn">
-                    <div class="btn__search"></div>
+                <button class="btn btn_search">
+                    <div class=""></div>
                 </button>
             </div>
         </header>
         
         <nav class="menu">
             <ul>
-                <li class="menu__item">Ремонт техники</li>
-                <li class="menu__item">Услуги и сервисы</li>
-                <li class="menu__item">Корпоративным клиентам</li>
-                <li class="menu__item">Продавцам техники</li>
-                <li class="menu__item">Партнерам</li>
-                <li class="menu__item">Производителям</li>
-                <li class="menu__item">Наши сервисные центры</li>
-                <li class="menu__item">Контакты</li>
+                <li class="menu__item"><a href="#">Ремонт техники</a></li>
+                <li class="menu__item"><a href="#">Услуги и сервисы</a></li>
+                <li class="menu__item"><a href="#">Корпоративным клиента</a>м</li>
+                <li class="menu__item"><a href="#">Продавцам техники</a></li>
+                <li class="menu__item"><a href="#">Партнерам</a></li>
+                <li class="menu__item"><a href="#">Производителям</a></li>
+                <li class="menu__item"><a href="#">Наши сервисные центры</a></li>
+                <li class="menu__item"><a href="#">Контакты</a></li>
             </ul>
         </nav>
     
         <footer class="footer container">
             <div class="footer__menu">
-                <button class="btn">
-                    <div class="btn__phone"></div>
-                </button>
-                <button class="btn">
-                    <div class="btn__chat"></div>
-                </button>
-                <button class="btn">
-                    <div class="btn__profile"></div>
-                </button>
+                <button class="btn btn_phone"></button>
+                <button class="btn btn_chat"></button>
+                <button class="btn btn_profile"></button>
             </div>
     
             <div class="footer__mail">
@@ -57,15 +49,28 @@
             </div>
     
             <div class="phone-number">
-                <h2><a href="tel: 88008908900">8 800 890 8900</a></h2>
+                <a href="tel: 88008908900">8 800 890 8900</a>
             </div>        
             
-            <ul class="footer__language"></ulclass>
-                <li class="language">RU</li>
-                <li class="language">EN</li>
-                <li class="language">CN</li>
+            
+            <ul class="footer__language">
+                <li class="language">
+                    <label class="check_input">
+                        <input type="radio" name="language">RU
+                    </label>
+                </li>
+                <li class="language">
+                    <label class="check_input">
+                        <input type="radio" name="language">EN
+                    </label>
+                </li>
+                <li class="language">
+                    <label class="check_input">
+                        <input type="radio" name="language">CN
+                    </label>
+                </li>
             </ul>
-                   
+                             
             
         </footer>
     </div>   
