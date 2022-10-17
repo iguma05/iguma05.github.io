@@ -8,6 +8,7 @@ body {
 button {
     border: none;
     cursor: pointer;
+    background: none;
 }
 .container {
     display: flex;
@@ -121,23 +122,25 @@ li {
 }
 .slide-menu {
     overflow-x: auto;
+    height: 100%; 
 }
 .slide-menu ul {
     display: flex;    
     flex-wrap: nowrap;    
-    margin:0 15px;    
+    margin:0 15px;
+    height: 40px;
 }
 
-.slide-menu button:hover, .slide-menu button:focus {
+.slide-menu button:hover, .slide-menu button:focus {     
     border: 2px solid #B8FFEC;
-    border-radius: 6px;
 }
 
 .content__item {
     padding: 8px 15px;    
     white-space: nowrap;    
     color: #7E7E82;
-    align-items: center;     
+    align-items: center;
+    border-radius: 6px;
 }
 /* .slide-menu li:first-child {
     border: 2px solid #B8FFEC;
