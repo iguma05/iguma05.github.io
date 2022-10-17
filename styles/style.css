@@ -373,6 +373,7 @@ li {
     .slide-menu ul {
         flex-wrap: wrap;
         overflow: visible;
+        height: 80px;
     }
     .content__item {
     }
