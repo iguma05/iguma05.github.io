@@ -2,19 +2,12 @@ const more = document.querySelector('.content__more');
 const text = document.querySelector('.text');
 
 more.addEventListener('click', ()=> {
-
-
-    if(more.textContent !== 'Свернуть') {
+    text.classList.toggle('open');
+    more.classList.toggle('rotate');
+    if(more.textContent !== "Свернуть") {
         more.textContent = "Свернуть";
-        more.classList.add('rotate');
-        // text.classList.add('open');
-        text.style.maxHeight = '260px';
-
     } else {
         more.textContent = "Читать далее";
-        more.classList.remove('rotate');
-        // text.classList.remove('open');
-        text.style.maxHeight = '90px';
     }
 });
 
@@ -29,15 +22,13 @@ new Swiper('.swiper', {
 const brands = document.querySelector('.brands__items');
 const seeBrandsAll = document.querySelector('.brands__more');
 
-seeBrandsAll.addEventListener('click', ()=> {
 
-    if ( seeBrandsAll.textContent !== "Свернуть") {
-        brands.style.maxHeight = '356px';
-        seeBrandsAll.textContent = "Свернуть"
-        seeBrandsAll.classList.add('rotate');
-    } else {
+seeBrandsAll.addEventListener('click', ()=> {
+    brands.classList.toggle('open_brands');
+    seeBrandsAll.classList.toggle('rotate');
+    if (seeBrandsAll.textContent !== "Показать все") {
         seeBrandsAll.textContent = "Показать все";
-        brands.style.maxHeight = '180px';
-        seeBrandsAll.classList.remove('rotate');
-    }    
+    } else {
+        seeBrandsAll.textContent ="Скрыть"
+    }
 });
