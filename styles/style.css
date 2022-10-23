@@ -1,6 +1,12 @@
+@font-face {
+    font-family: TTLakes;
+    src: url('/font/TTLakes-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
 body {
     margin: 0;
-    font-family: 'TT Lakes', sans-serif;
+    font-family: "TTLakes", sans-serif;
     max-width: 1120px;
     min-width: 320px;
     background-color: #F8F8F8;
@@ -19,7 +25,7 @@ button {
     min-height: 80px;
     align-items: center;
     background-color: #fff;
-    margin: 0 16px;
+    padding: 0 16px;
 }
 
 .page-header__contacts {
@@ -58,7 +64,8 @@ button {
 .logo {
     height: 60px;
     width: 100px;
-    background: url(/img/Logo.svg) no-repeat;
+    background-image: url("/img/Logo.svg");
+    background-repeat: no-repeat;
     margin-left: 20px;
 }
 .btn_phone {
@@ -142,21 +149,21 @@ li {
     align-items: center;
     border-radius: 6px;
 }
-/* .slide-menu li:first-child {
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-} */
+
 .content__text {
     font-size: 14px;
     line-height: 18px;
     padding: 10px 15px;
-    letter-spacing: 0.2px;
+    letter-spacing: -0.2px;
     width: 90%;
 }
 .text {
+    display: flex;
+    flex-direction: column;
     overflow: hidden;    
-    height: 80px;
+    max-height: 90px;
     margin-bottom: 15px;
+    transition: 1s;
 }
 
 .content__more {
@@ -168,16 +175,17 @@ li {
 .content__more::before {
     float: left;
     content: "";
-    background: url(/img/arrows.svg) no-repeat;
+    background: url("/img/arrows.svg") no-repeat;
     width: 10px;
     height: 10px;
     color: #41F6D7;
     margin-right: 16px;
     align-self: center;
+    transition: 1s;
 }
-.content__more:active::before {
-    transform: rotate(180deg);
-}
+/*.content__more:active::before {*/
+/*    transform: rotate(180deg);*/
+/*}*/
 
 .content__photo {
     width: 100%;
@@ -225,7 +233,7 @@ li {
     border: 1px solid #EAEAEA;
     border-radius: 6px;
     align-items: center;
-    margin: 8px;
+    margin: 0 16px;
     padding: 0 16px;
 }
 
@@ -250,6 +258,7 @@ li {
 @media (min-width: 768px) {
     header {
     }
+
     .page-header {
         min-height: 80px;
         align-items: center;
@@ -288,7 +297,6 @@ li {
         max-height: 20%;
     }
     .text {
-        height: 150px; 
         margin-bottom: 15px;          
     }
     .content__photo {
@@ -307,14 +315,15 @@ li {
         display: none;
     }
     .brands {
-        height: 332px;
+        height: auto;
     }
     .brands__items {
         display: flex;
         flex-wrap: wrap;
         margin: 0 8px;
         overflow: hidden;
-        height: 180px;
+        max-height: 180px;
+        transition: 1s;
     }
 
     .brands__item {
@@ -391,11 +400,11 @@ li {
         height: 307px;
         width: 531px;
     }
-} 
+}
 
 .open {
     overflow: visible;
-    height: auto;
+    /*height: auto;*/
 }
 
 .rotate::before {
